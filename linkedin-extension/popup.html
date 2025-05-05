@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Extractor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>LinkedIn Data</h1>
+  <label for="action-select">Choose an Action:</label>
+  <select name="action" id="action-select">
+    <option value="extractSmartMessages">Smart Message Extraction</option>
+    <option value="extractSmartConnections">Smart Connections Extraction</option>
+    <option value="extractProfileData">Profile Extraction</option>
+    <option value="extractAllMessages">All Message Extraction</option>
+    <option value="extractAllConnections">All Connections Extraction</option>
+  </select>
+  <button id="extract">Extract</button>
+  <button id="sync">Sync to App</button>
+  <script src="popup.js"></script>
+</body>
+</html>

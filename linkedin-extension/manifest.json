@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Contact Tracker",
+  "version": "1.0",
+  "description": "Extracts and syncs contact data from your LinkedIn messages.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["*://www.linkedin.com/*"],
+  "content_scripts": [
+  {
+    "matches": ["*://www.linkedin.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+]
+}
